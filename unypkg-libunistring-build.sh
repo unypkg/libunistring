@@ -79,6 +79,7 @@ unset LD_RUN_PATH
             --docdir=/uny/pkg/"$pkgname"/"$pkgver"/share/doc/libunistring
 
 make -j"$(nproc)"
+make -j"$(nproc)" check
 make -j"$(nproc)" install
 
 ####################################################
