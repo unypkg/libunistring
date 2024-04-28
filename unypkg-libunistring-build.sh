@@ -47,7 +47,7 @@ echo "newer" >release-"$pkgname"
 
 git_clone_source_repo
 
-cd libunistring || exit
+cd "$pkgname" || exit
 ./autopull.sh
 ./autogen.sh
 cd /uny/sources || exit
